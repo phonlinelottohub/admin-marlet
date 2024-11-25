@@ -68,6 +68,14 @@
             border-radius: 10px;
             margin-bottom: 20px;
         }
+/* Highlight the active tab */
+.tab.active-tab {
+    background-color: #ff4500; /* Example active color */
+    color: white; /* Contrast text color */
+    font-weight: bold; /* Optional for emphasis */
+    border: 1px solid #cc3300; /* Optional border */
+}
+
 
         .active {
             display: block;
@@ -300,7 +308,7 @@
     </div>
 </div>
     <div id="lottoresult" class="tab-content" style="max-height: 300px; overflow-y: auto;"></div>
-    
+
     <section class="cta">
         <p>Ang pag bayad sa taya at Pag Claim ng papremyong ay via GCASH</p>
         <p>iSend lang sa GC ang screenshot ng proof of payment para mavalidate ang iyong taya</p>
@@ -513,6 +521,22 @@ function copyToClipboard3D() {
     navigator.clipboard.writeText(textToCopy).then(() => {
         alert("Lucky Number copied to clipboard!");
     });
+}
+
+function openTab(tabId) {
+    // Hide all tab content
+    const contents = document.querySelectorAll('.tab-content');
+    contents.forEach(content => content.classList.remove('active'));
+
+    // Remove active-tab class from all tabs
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => tab.classList.remove('active-tab'));
+
+    // Show the selected tab content
+    document.getElementById(tabId).classList.add('active');
+
+    // Highlight the clicked tab
+    event.target.classList.add('active-tab');
 }
 
 </script>
