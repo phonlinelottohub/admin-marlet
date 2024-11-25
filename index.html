@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Lottery Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0038a8, #ce1126);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 1px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .play-now {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            background-color: #ff4500;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .play-now:hover {
+            background-color: #ff6347;
+            transform: scale(1.05);
+        }
+
+        .tabs {
+            display: flex;
+            cursor: pointer;
+            margin-bottom: 10px;
+            justify-content: center;
+        }
+
+        .tab {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-right: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .container {
+            background: white;
+            color: black;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: auto;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #218838;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .result2D {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .result3D {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .copy-btn {
+            margin-top: 5px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .copy-btn:hover {
+            background-color: #0056b3;
+        }
+        .copy-btn2D {
+            margin-top: 5px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .copy-btn2D:hover {
+            background-color: #0056b3;
+        }
+        .copy-btn3D {
+            margin-top: 5px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .copy-btn3D:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="https://raw.githubusercontent.com/phonlinelottohub/admin-marlet/main/BIG WIN.png" alt="BIG WIN" class="JACKPOT">
+    <img src="https://raw.githubusercontent.com/phonlinelottohub/admin-marlet/main/PH.jpg" alt="LOGO" style="width: 100%; border-radius: 10px; margin-top: 5px; max-width: 100%;">
+    <h1>GCASH USERS, READY NA BA KAYONG MANALO? 🥳</h1>
+    <h2>Sumali sa aming Messenger Group Chat at maglaro na para sa chance manalo ng BIGTIME!</h2>
+    <h3>SIMPLE LANG ANG MANALO, SUNDIN LANG MABUTI ANG MECHANICS NG LARO</h3>
+</header>
+<main>
+    <h2>Hi! I am Admin Marlet</h2>
+    <a href="https://m.me/j/AbZXYX9XWi7A2tcH/" class="play-now">Join Now in 2D & 3D GC</a>
+    <a href="https://m.me/j/AbbId_eg0cox18ws/" class="play-now">Join Now in PICK 3 GC</a>
+    <p>PINDUTIN LANG ANG MGA MECHANICS SA IBABA PARA SA IBA PANG IMPORMASYON.</p>
+
+    <!-- Tabs for Mechanics -->
+    <div class="tabs">
+        <div class="tab" onclick="openTab('pick3')">PICK 3 Mechanics</div>
+        <div class="tab" onclick="openTab('lotto2d')">2D LOTTO Mechanics</div>
+        <div class="tab" onclick="openTab('lotto3d')">3D LOTTO Mechanics</div>
+        <div class="tab" onclick="openTab('lottoresult')">LOTTO RESULT</div>
+    </div>
+    <div id="pick3" class="tab-content">
+        <p>◽️Pumili lang nang (3) Tatlong Numero mula 1-45 kung 6/45 ang draw every (M - W - F)</p>
+        <p>◽️Pumili lang nang (3) Tatlong Numero mula 1-49 kung 6/49 ang draw every (T - Th - Sun)</p>
+        <p>◽️Pumili lang nang (3) Tatlong Numero mula 1-55 kung 6/55 ang draw every (Saturday)</p>
+        <p>◽️Kapag lumabas ang tatlong numero mo sa PCSO live draw, PANALO KA NA AGAD!</p>
+        <p>◽️Kapag dalawa lang ang lumabas sa numero mo, balik taya ka (exclusive for 50 pesos pataas na taya)</p>
+        <img src="https://raw.githubusercontent.com/phonlinelottohub/admin-marlet/main/PICK3.png" alt="MECHANICS" style="max-width: 100%; border-radius: 10px; margin-top: 1px;">
+
+        <!-- Lucky Number Generator Section -->
+        <div class="container">
+            <img src="https://raw.githubusercontent.com/phonlinelottohub/admin-marlet/main/LOTTO.png" alt="LOTTO">
+            <div class="form-group">
+                <label for="betAmount">Bet Amount</label>
+                <input type="text" id="betAmount" placeholder="Enter your Bet Amount">
+                <button onclick="generateLuckyNumber()">GENERATE</button>
+            </div>
+            <div class="result" id="luckyNumberResult" style="color: black;">Click GENERATE to get your Lucky Numbers</div>
+            <button class="copy-btn" onclick="copyToClipboard()">Copy Text</button>
+        </div>
+    </div>
+<div id="lotto2d" class="tab-content">
+    <p>◽️Pumili lang nang (2) Dalawang Numero mula 1-31</p>
+    <p>◽️Lagyan ng "S" kung STRAIGHT ang taya (exact order) after ng BET AMOUNT</p>
+    <p>◽️Lagyan ng "R" kung RUMBLE ang taya (in any order) after ng BET AMOUNT</p>
+    <p>◽️Lagyan ng "P" kung POMPI ang taya (2 same number) after ng BET AMOUNT</p>
+    <p>EXAMPLE:</p>
+    <p>01 15 100 S</p>
+    <p>01 15 100 R</p>
+    <p>15 15 100 P</p>
+    <img src="https://raw.githubusercontent.com/phonlinelottohub/admin-marlet/main/2D.png" alt="MECHANICS" style="max-width: 100%; border-radius: 10px; margin-top: 1px;">
+
+    <!-- Added 2D Lotto Generator Section -->
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/phonlinelottohub/admin-marlet/main/2D GENERATE.png" alt="GENERATE">
+        <div class="form-group">
+            <div class="input-group">
+                <label for="betAmount2D">Bet Amount</label>
+                <input type="text" id="betAmount2D" placeholder="Presyo ng taya">
+            </div>
+            <div class="input-group">
+                <label for="typeOfBet">Type of Bet</label>
+                <input type="text" id="typeOfBet" placeholder="S, R, P">
+            </div>
+            <button onclick="generateLuckyNumber2D()">GENERATE</button>
+        </div>
+        <div class="result2D" id="luckyNumberResult2D" style="color: black;">Click GENERATE to get your Lucky Numbers</div>
+        <button class="copy-btn2D" onclick="copyToClipboard2D()">Copy Text</button>
+    </div>
+</div>
+
+    <div id="lotto3d" class="tab-content">
+        <p>◽️Pumili lang nang (3) Numero mula 0-9</p>
+        <p>◽️Lagyan ng "S" kung STRAIGHT ang taya (exact order) after ng BET AMOUNT</p>
+        <p>◽️Lagyan ng "R" kung RUMBLE ang taya (in any order) after ng BET AMOUNT</p>
+        <p>◽️Lagyan ng "T" kung TRIO ang taya (3 same number) after ng BET AMOUNT</p>
+        <p>EXAMPLE:</p>
+        <p>1 2 3 100 S</p>
+        <p>1 2 3 100 R</p>
+        <p>7 7 7 100 T</p>
+        <img src="https://raw.githubusercontent.com/phonlinelottohub/admin-marlet/main/3D.png" alt="MECHANICS" style="max-width: 100%; border-radius: 10px; margin-top: 1px;">
+
+    <!-- Added 3D Lotto Generator Section -->
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/phonlinelottohub/admin-marlet/main/3D GENERATE.png" alt="GENERATE">
+        <div class="form-group">
+            <div class="input-group">
+                <label for="betAmount3D">Bet Amount</label>
+                <input type="text" id="betAmount3D" placeholder="Presyo ng taya">
+            </div>
+            <div class="input-group">
+                <label for="typeOfBet3D">Type of Bet</label>
+                <input type="text" id="typeOfBet3D" placeholder="S, R, T">
+            </div>
+            <button onclick="generateLuckyNumber3D()">GENERATE</button>
+        </div>
+        <div class="result3D" id="luckyNumberResult3D" style="color: black;">Click GENERATE to get your Lucky Numbers</div>
+        <button class="copy-btn3D" onclick="copyToClipboard3D()">Copy Text</button>
+    </div>
+</div>
+    <div id="lottoresult" class="tab-content" style="max-height: 300px; overflow-y: auto;"></div>
+
+    <section class="cta">
+        <p>Ang pag bayad sa taya at Pag Claim ng papremyong ay via GCASH</p>
+        <p>iSend lang sa GC ang screenshot ng proof of payment para mavalidate ang iyong taya</p>
+        <p>Marami ng nanalo! Ano pang inaantay mo?</p>
+        <p>Mag-Cash-In na, magjoin sa GC at i-send ang iyong taya!</p>
+        <p>Pindutin lang ang "Join Now" para makapasok at makasali sa GC</p>
+    </section>
+    <a href="https://m.me/j/AbZXYX9XWi7A2tcH/" class="play-now">Join Now in 2D & 3D GC</a>
+    <a href="https://m.me/j/AbbId_eg0cox18ws/" class="play-now">Join Now in PICK 3 GC</a>
+</main>
+<footer>
+    <p>© 2024 Philippines Online Lottery Hub. All rights reserved.</p>
+</footer>
+
+<script>
+    function openTab(tabId) {
+        // Hide all tab content
+        const contents = document.querySelectorAll('.tab-content');
+        contents.forEach(content => content.classList.remove('active'));
+
+        // Remove active-tab class from all tabs
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => tab.classList.remove('active-tab'));
+
+        // Show the selected tab content
+        document.getElementById(tabId).classList.add('active');
+
+        // Highlight the clicked tab
+        event.target.classList.add('active-tab');
+    }
+
+    function generateLuckyNumber() {
+        // Get the bet amount
+        const betAmount = parseInt(document.getElementById("betAmount").value.trim(), 10);
+
+        // Validate the bet amount
+        if (isNaN(betAmount)) {
+            alert("Please enter a valid number for the Bet Amount!");
+            return;
+        }
+
+        if (betAmount < 20 || betAmount > 1000) {
+            alert("Bet amount must be between 20 and 1000.");
+            return;
+        }
+
+        if (betAmount % 5 !== 0) {
+            alert("Bet amount must be divisible by 5.");
+            return;
+        }
+
+        // Generate 3 random unique numbers between 1 and 55
+        const numbers = [];
+        while (numbers.length < 3) {
+            const randomNum = Math.floor(Math.random() * 55) + 1;
+            const formattedNum = randomNum < 10 ? `0${randomNum}` : `${randomNum}`; // Format to 2 digits
+            if (!numbers.includes(formattedNum)) {
+                numbers.push(formattedNum);
+            }
+        }
+
+        // Format the result: "23 33 13 = 25"
+        const luckyNumber = numbers.join(" ");
+        document.getElementById("luckyNumberResult").innerText = `${luckyNumber} = ${betAmount}`;
+
+    }
+
+    function copyToClipboard() {
+        // Copy the lucky number result to the clipboard
+        const textToCopy = document.getElementById("luckyNumberResult").innerText;
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            alert("Lucky Number copied to clipboard!");
+        });
+    }
+
+    // Function to fetch and display CSV data from Google Sheets
+    function loadLottoResults() {
+        const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTtTFCtUOIenvcr85QeSPEgj_kKdahwiHfjohPWgpt6pgGxXDhLe7CmltYikU3gpshD1ifobyyGa9p_/pub?gid=0&single=true&output=csv'; // Replace with your Google Sheets CSV URL
+
+        fetch(csvUrl)
+            .then(response => response.text())
+            .then(data => {
+                const lines = data.split('\n');
+                let html = '<table border="1" style="width: auto; color: white;">';
+
+                // Add table headers
+                const headers = lines[0].split(',');
+                html += '<tr>';
+                headers.forEach(header => {
+                    html += `<th>${header}</th>`;
+                });
+                html += '</tr>';
+
+                // Reverse the data rows (excluding the header)
+                const dataRows = lines.slice(1).reverse();
+
+                // Loop through each reversed line to create table rows
+                dataRows.forEach(line => {
+                    const columns = line.split(',');
+                    if (columns.length > 1) {
+                        html += '<tr>';
+                        columns.forEach(col => {
+                            html += `<td>${col}</td>`;
+                        });
+                        html += '</tr>';
+                    }
+                });
+
+                html += '</table>';
+                document.getElementById('lottoresult').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error fetching the CSV data:', error);
+                document.getElementById('lottoresult').innerText = 'Error loading results.';
+            });
+    }
+
+    // Call the function to load lotto results
+    loadLottoResults();
+  
+   function generateLuckyNumber2D() {
+            const betAmount2D = document.getElementById("betAmount2D").value.trim();
+            const typeOfBet = document.getElementById("typeOfBet").value.trim().toUpperCase();
+            const resultElement = document.getElementById("luckyNumberResult2D");
+
+            // Validate Bet Amount
+            if (!betAmount2D || isNaN(betAmount2D) || betAmount2D < 10 || betAmount2D > 1000 || betAmount2D % 5 !== 0) {
+                alert("Invalid Bet Amount! It must be between 10 and 1000 and divisible by 5.");
+                return;
+            }
+
+            // Validate Type of Bet
+            if (!typeOfBet || !["S", "R", "P"].includes(typeOfBet)) {
+                alert("Invalid Type of Bet! Please enter S, R, or P.");
+                return;
+            }
+
+            let numbers = [];
+
+            // Generate numbers based on the type of bet
+            if (typeOfBet === "P") {
+                // Generate two identical numbers
+                const sameNum = Math.floor(Math.random() * 31) + 1;
+                const formattedNum = sameNum < 10 ? `0${sameNum}` : `${sameNum}`;
+                numbers = [formattedNum, formattedNum];
+            } else {
+                // Generate two random unique numbers
+                while (numbers.length < 2) {
+                    const randomNum = Math.floor(Math.random() * 31) + 1;
+                    const formattedNum = randomNum < 10 ? `0${randomNum}` : `${randomNum}`; // Format as two digits
+                    if (!numbers.includes(formattedNum)) {
+                        numbers.push(formattedNum);
+                    }
+                }
+            }
+
+            // Output format: "(2 generated numbers) (bet amount) (type of bet)"
+            const luckyNumber2D = `${numbers.join(" ")} ${betAmount2D} ${typeOfBet}`;
+document.getElementById("luckyNumberResult2D").innerText = luckyNumber2D;
+
+            // Change the output text color to black
+            resultElement.style.color = "black";
+   }
+
+        function copyToClipboard2D() {
+            const textToCopy = document.getElementById("luckyNumberResult2D").innerText;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert("Lucky Number copied to clipboard!");
+            });
+}
+function generateLuckyNumber3D() {
+    const betAmount3D = document.getElementById("betAmount3D").value.trim();
+    const typeOfBet3D = document.getElementById("typeOfBet3D").value.trim().toUpperCase();
+    const resultElement3D = document.getElementById("luckyNumberResult3D");
+
+    // Validate Bet Amount
+    if (!betAmount3D || isNaN(betAmount3D) || betAmount3D < 10 || betAmount3D > 1000 || betAmount3D % 5 !== 0) {
+        alert("Invalid Bet Amount! It must be between 10 and 1000 and divisible by 5.");
+        return;
+    }
+
+    // Validate Type of Bet
+    if (!typeOfBet3D || !["S", "R", "T"].includes(typeOfBet3D)) {
+        alert("Invalid Type of Bet! Please enter S, R, or T.");
+        return;
+    }
+
+    let numbers = [];
+
+    if (typeOfBet3D === "T") {
+        // Generate three identical numbers
+        const sameNum = Math.floor(Math.random() * 10); // Random number from 0 to 9
+        numbers = [sameNum, sameNum, sameNum];
+    } else {
+        // Generate three random numbers (duplicates allowed for R or S)
+        for (let i = 0; i < 3; i++) {
+            const randomNum = Math.floor(Math.random() * 10); // Random number from 0 to 9
+            numbers.push(randomNum);
+        }
+    }
+
+    // Format and display the result
+    const luckyNumber3D = `${numbers.join(" ")} ${betAmount3D} ${typeOfBet3D}`;
+    resultElement3D.innerText = luckyNumber3D;
+    resultElement3D.style.color = "black"; // Change result text color to black
+}
+
+function copyToClipboard3D() {
+    const textToCopy = document.getElementById("luckyNumberResult3D").innerText;
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        alert("Lucky Number copied to clipboard!");
+    });
+}
+
+</script>
+</body>
+</html>
